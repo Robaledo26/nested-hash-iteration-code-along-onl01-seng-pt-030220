@@ -13,9 +13,7 @@ contacts = {
    }
  }
 
-puts remove_strawberry(contacts)
-
-contacts.each do |person, data|
+puts remove_strawberry(contacts)contacts.each do |person, data|
     data.each do |attr, value|
       if attr == :favorite_icecream_flavors
         value.delete_if { |flavor| flavor == "strawberry" }
@@ -23,7 +21,4 @@ contacts.each do |person, data|
     end
   end
 
-#To run this file, in the terminal type: ruby bin
-
-contacts
-end
+#To run this file, in the terminal type: ruby bin/contacts
